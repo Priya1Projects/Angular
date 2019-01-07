@@ -1,0 +1,20 @@
+<h2>
+    {{title}}
+</h2>
+<h3> {{message}}</h3>
+<p>{{favoriteNb}} favorites</p>
+<p>   <a [routerLink]= "['insert']" routerLinkActive="active">Insert Product </a>
+    </p>
+<button (click)= "onSort()">Sort by price </button>
+<ul class="products">
+    <li *ngFor = "let prod of product$ | async | orderBy:[sorter]"
+    [class.discontinued] = "prod.discontinued"
+    (click)= "onSelect(prod)"
+    [class.selected] = "selectedProduct == prod " 
+    > 
+        <span class ="name" > {{prod.name}}</span>
+        {{prod.description}}
+         <span class ="price"> {{prod.price | currency : 'CAD':true:'3.3'}}</span>
+    </li>
+</ul>
+

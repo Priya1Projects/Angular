@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+<nav>
+  <a [routerLink]="['/home']" routerLinkActive="active">Home </a>
+   <a [routerLink]="['/contact']" routerLinkActive="active">Contact </a>
+      <a [routerLink]="['/products']" routerLinkActive="active">Products </a>
+
+</nav>
+<router-outlet> </router-outlet>
+
+<hr>
+2016 Angular 2 Training

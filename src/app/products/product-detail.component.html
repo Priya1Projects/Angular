@@ -1,0 +1,11 @@
+<div *ngIf="product"><h2>{{product.name}}</h2>
+<p>{{product.description}}</p>
+<p>{{product.price}}</p>
+<p> Edit Price : <input type = "number" [(ngModel)]= "product.price"> </p>
+<p>Discontinued ? <input type ="checkbox" [(ngModel)]= "product.discontinued"></p>
+<p>Modified Date : {{product.modifiedDate}}</p>
+
+<button (click)= "addToFavorites(product)"> Add To Favorites</button>
+
+</div>
+
