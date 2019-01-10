@@ -1,6 +1,7 @@
 # Demoapp to learn Angular 
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+Simple Product add , list and show detail feature created
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
